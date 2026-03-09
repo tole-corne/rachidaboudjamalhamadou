@@ -9,8 +9,8 @@
         <nav class="nav">
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
-          <a href="#certifications">Certifications</a>
-          <a href="#contact">Contact</a>
+          <a href="https://github.com/tole-corne" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/rachid-abou-djamal-hamadou" target="_blank" rel="noopener">LinkedIn</a>
         </nav>
       </div>
     </header>
@@ -35,38 +35,6 @@
             }
           }
         });
-      });
-
-      document.addEventListener('mouseover', function(e) {
-        const img = e.target.closest('img[data-preview]');
-        if (!img) return;
-        img.dataset.still = img.dataset.still || img.src;
-        img.src = img.getAttribute('data-preview');
-      });
-
-      document.addEventListener('mouseout', function(e) {
-        const img = e.target.closest('img[data-preview]');
-        if (!img || !img.dataset.still) return;
-        img.src = img.dataset.still;
-      });
-
-      const lb = document.createElement('div');
-      lb.className = 'lightbox hidden';
-      lb.innerHTML = '<div class="lb-backdrop"></div><img class="lb-img" alt=""><button class="lb-close" aria-label="Close">×</button>';
-      document.body.appendChild(lb);
-
-      const lbImg = lb.querySelector('.lb-img');
-      const close = () => lb.classList.add('hidden');
-
-      lb.querySelector('.lb-backdrop').addEventListener('click', close);
-      lb.querySelector('.lb-close').addEventListener('click', close);
-
-      document.addEventListener('click', function(e) {
-        const a = e.target.closest('[data-lightbox-src]');
-        if (!a) return;
-        e.preventDefault();
-        lbImg.src = a.getAttribute('data-lightbox-src');
-        lb.classList.remove('hidden');
       });
     </script>
   </body>
