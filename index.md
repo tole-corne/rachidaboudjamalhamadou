@@ -35,14 +35,26 @@ title: "Home"
   object-position: center 25%;
   transform: scale(0.9);
 }
+
+.about-container{
+  display:flex;
+  align-items:center;
+  gap:30px;
+  flex-wrap:wrap;
+}
+
+.about-text{
+  max-width:600px;
+}
 </style>
 
-<section id="about" class="section">
+<section id="about">
+
 <div class="about-container">
 
 <img src="{{ '/assets/images/rachid.png' | relative_url }}"
-     alt="Rachid Abou Djamal Hamadou"
-     class="profile-pic">
+alt="Rachid Abou Djamal Hamadou"
+class="profile-pic">
 
 <div class="about-text">
 
@@ -61,22 +73,15 @@ analyzed and transformed into useful insights.
 Python · SQL · Data Analysis · Cloud Computing · Machine Learning
 </p>
 
-<p class="social-links">
+<p>
 
-<a href="https://www.linkedin.com/in/rachid-abou-djamal-hamadou"
-   target="_blank"
-   aria-label="LinkedIn">
-<i class="fa-brands fa-linkedin"></i>
-</a>
-
-<a href="https://github.com/tole-corne"
-   target="_blank"
-   aria-label="GitHub">
-<i class="fa-brands fa-github"></i>
-</a>
+<a href="https://www.linkedin.com/in/rachid-abou-djamal-hamadou" target="_blank">LinkedIn</a> |
+<a href="https://github.com/tole-corne" target="_blank">GitHub</a>
 
 </p>
 
 </div>
+
 </div>
+
 </section>
