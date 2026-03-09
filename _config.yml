@@ -1,16 +1,11 @@
-title: "Rachid Abou Djamal Hamadou — Data Science & AI"
-description: "Portfolio showcasing projects in data science, AI, cloud, and analytics."
-baseurl: "/rachidaboudjamalhamadou"
+title: "Rachid Abou Djamal Hamadou — Portfolio"
+description: "Data Science & AI student portfolio."
+
+baseurl: ""
 url: "https://tole-corne.github.io"
+
 markdown: kramdown
 theme: null
-plugins: []
-
-defaults:
-  - scope:
-      path: ""
-    values:
-      layout: default
 
 author: "Rachid Abou Djamal Hamadou"
 github_username: "tole-corne"
